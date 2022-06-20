@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Premium</title>
+    <style>
+        body {
+            background-color: rgb(211, 210, 210);
+            /*font-family: Arial, Helvetica, sans-serif;*/
+            font-family: Helvetica,Arial,sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+        .alineacion_ficha {
+            margin-left: 10px;
+            text-align: left;
+        }
+        p{
+            text-size-adjust: 9px;
+        }
+        .ficha{
+            background-color: #fff;
+            width: 240px;
+            height: 650px;
+            border: solid 1px rgb(248, 242, 242);
+            border-radius: 15px;
+            padding: 10px 25px;
+            text-align: left;
+            margin-left: 10px;
+            position: relative;
+        }
+        .botton_azul{
+            background-color: #2e77d0;
+            color: #fff;
+            display: inline-block;
+            text-align: left;
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-top: 10px;
+            margin-left: 15px;
+
+        }
+        .borde_azul{
+            color: #2e77d0;
+            border: solid 1px #2e77d0;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 0px 4px 10px 0px;
+            padding: 4px 8px;
+            margin-top: 10px;
+            margin-left: 15px;
+
+            }
+        .boton_negro{
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            padding: 15px 65px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            margin-left: 15px;
+
+
+        }
+        .img_lista{
+            list-style-image: url('img/paloma.png');
+            font-size: 15px;
+            height: 600px;
+        }
+        .pie{
+            margin-left: 5px;
+            font-size: 11px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .img_linea{
+            background-image: url("img/american-express-svgrepo-com.svg");
+            /*
+            background-image: url("img/mastercard-svgrepo-com.svg");
+            background-image: url("img/paypal-svgrepo-com.svg");*/
+            width: 40;
+            height: 20;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+
+        }
+        footer{
+            bottom: 50px;
+            position: absolute;
+        }
+        .contiene_lista{
+            height: 1000px;
+            border: solid 1px #2e77d0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><b>Elige tu plan premium</b></h1>
+    <h4>Escucha sin límites en tu teléfono, altavoces y otros dispositivos.</h4>
+    <img src="img/mastercard-svgrepo-com.svg" width="50" height="20"></img>
+    <img src="img/american-express-svgrepo-com.svg" width="50" height="20"></img>
+    <img src="img/paypal-svgrepo-com.svg" width="50" height="20"></img>
+    <img src="img/visa-svgrepo-com.svg" width="70" height="25"></img>
+    <div class="img_linea"></div>
+    <br><br>
+
+    <div class="contenedor">
+
+        <div class="ficha">
+            <div class="botton_azul"><b>1 mes gratis si te suscribes</b></div>
+            <div class="borde_azul"><b>Págo único disponible</b></div>
+            <div class="alineacion_ficha"><h2><b>Individual</b></h2></div>
+            <div class="alineacion_ficha">Después del periodo de la oferta, $ 115.00 al mes 1 cuenta</div>
+            <div class="alineacion_ficha">_________________________</div>
+            <ul class="img_lista">
+                <li>Escucha música sin anuncios</li>
+                <li>Reproduce tus canciones en cualquier lugar, incluso sin conexión</li>
+                <li>Reproducción on-demand</li>
+                <li>Prepaga o suscríbete</li>
+            </ul>
+            <footer>
+            <div class="boton_negro">Comenzar</div>
+            <p class="pie"><u>Se aplican Términos y Condiciones.</u> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+            </footer>
+        </div>
+
+        <div class="ficha">
+            <div class="botton_azul"><b>1 mes gratis si te suscribes</b></div>
+            <div class="borde_azul"><b>Págo único disponible</b></div>
+            <div class="alineacion_ficha"><h2><b>Duo</b></h2></div>
+            <div class="alineacion_ficha">Después del periodo de la oferta, $ 149.00 al mes 2 cuentas</div>
+            <div class="alineacion_ficha">_________________________</div>
+            <ul class="img_lista">
+                <li>2 cuentas Premium para parejas que conviven</li>
+                <li>Reproducción de música sin anuncios, sin conexión y on-demand</li>
+                <li>Prepaga o suscríbete</li>
+            </ul>
+            <footer>
+                <div class="boton_negro">Comenzar</div>
+                <p class="pie"><u>Se aplican Términos y Condiciones.</u> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+            </footer>
+        </div>
+
+        <div class="ficha">
+            <div class="botton_azul"><b>1 mes gratis si te suscribes</b></div>
+            <div class="borde_azul"><b>Págo único disponible</b></div>
+            <div class="alineacion_ficha"><h2><b>Familiar</b></h2></div>
+            <div class="alineacion_ficha">Después del periodo de la oferta, $ 179.00 al mes Hasta 6 cuentas</div>
+            <div class="alineacion_ficha">_________________________</div>
+            <div class="contiene_lista">
+                <ul class="img_lista">
+                    <li>6 cuentas Premium para familiares que conviven</li>
+                    <li>Bloquea la música explícita</li>
+                    <li>Reproducción de música sin anuncios, sin conexión y on-demand</li>
+                    <li>Spotify Kids: una aplicación independiente creada solo para niños</li>
+                    <li>Prepaga o suscríbete</li>
+                </ul>
+            </div>
+           
+            <footer>
+            <div class="boton_negro">Comenzar</div>
+            <p class="pie"><u>Se aplican Términos y Condiciones.</u> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p>
+            </footer>
+        </div>
+
+        <div class="ficha">
+            <div class="botton_azul"><b>1 mes gratis si te suscribes</b></div>
+            <div class="borde_azul"><b>Págo único disponible</b></div>
+            <div class="alineacion_ficha"><h2><b>Estudiantes</b></h2></div>
+            <div class="alineacion_ficha">Después del periodo de la oferta, $ 57.00 al mes 1 cuenta</div>
+            <div class="alineacion_ficha">_________________________</div>
+            <ul class="img_lista">
+                <li>Descuento especial para estudiantes universitarios que cumplen con los requisitos</li>
+                <li>Escucha música sin anuncios</li>
+                <li>Reproduce tus canciones en cualquier lugar, incluso sin conexión</li>
+                <li>Reproducción on-demand</li>
+            </ul>
+            <footer>
+            <div class="boton_negro">Comenzar</div>
+            <!--p class="pie"><u>Se aplican Términos y Condiciones.</u> El mes gratis no está disponible para los usuarios que ya hayan probado Premium.</p-->
+            <p class="pie">Esta oferta está disponible únicamente para estudiantes de instituciones de educación superior acreditadas. El mes gratis no está disponible para los usuarios que ya hayan probado Premium. <u>Se aplican los Términos y Condiciones</u> de la oferta Spotify Premium para Estudiantes.<p>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
