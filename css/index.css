@@ -1,4 +1,156 @@
+/* CARD */
+body {
+    /*background-color: rgb(211, 210, 210);
+    font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Helvetica,Arial,sans-serif;
+    /*font-size: 15px;*/
+    text-align: center;
+}
+.alineacion_ficha {
+    margin-left: 10px;
+    text-align: left;
+}
+p{
+    text-size-adjust: 9px;
+}
+.ficha{
+    background-color: #fff;
+    width: 240px;
+    height: 650px;
+    border: solid 1px rgb(248, 242, 242);
+    border-radius: 15px;
+    padding: 10px 25px;
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+}
+.botton_azul{
+    background-color: #2e77d0;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+.borde_azul{
+    color: #2e77d0;
+    border: solid 1px #2e77d0;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 4px 10px 0px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    margin-left: 15px;
+
+    }
+.boton_negro{
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 65px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-left: 15px;
+
+
+}
+.img_lista{
+    list-style-image: url('img/paloma.png');
+    font-size: 15px;
+    height: 600px;
+}
+.pie{
+    margin-left: 5px;
+    font-size: 11px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.img_linea{
+    background-image: url("img/american-express-svgrepo-com.svg");
+    /*
+    background-image: url("img/mastercard-svgrepo-com.svg");
+    background-image: url("img/paypal-svgrepo-com.svg");*/
+    width: 40;
+    height: 20;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+footer{
+    bottom: 50px;
+    position: absolute;
+}
+.contiene_lista{
+    height: 1000px;
+    border: solid 1px #2e77d0;
+}
+/* FIN CARD */
+a {
+    color:#dc451b;
+    text-decoration: none;
+}
+.link { 
+    color: #FF0000;  /* CSS link color (red) */
+    text-decoration: none;
+
+} 
+
+.link:hover {
+     color: #00FF00;   /* CSS link hover (green) */
+    } 
+
 .div_footer{
  display: grid;
  grid-template-columns: 25% 25% 25% 25%;
+}
+.conf_carrucel{
+    min-width: 300;
+    min-height: 200;
+}
+.d-grid{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: auto auto auto;
+    background-color: azure;
+    padding: 5px;
+}
+.galeria1, .galeria2, .galeria3, .galeria4, .galeria5, .galeria6, .galeria7  {
+    min-height: 120px;
+    min-width: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.fondo{
+    min-height: 600px;
+    min-width: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/pie_pagina.png");
+}
+
+@media only screen and (min-width: 400px) {
+   .d-grid{
+       grid-template-columns: auto;
+   }
+}
+@media only screen and (min-width: 600px) {
+    .d-grid{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .d-grid{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+.contenedor {
+    text-align: center;
+    align-content: center;
 }
