@@ -92,20 +92,22 @@ footer{
     border: solid 1px #2e77d0;
 }
 /* FIN CARD */
-a {
-    color:#dc451b;
+
+.link {
+    color: #FF0000;
     text-decoration: none;
+
 }
-.link { 
-    color: #FF0000;  /* CSS link color (red) */
-    text-decoration: none;
-
-} 
-
 .link:hover {
-     color: #00FF00;   /* CSS link hover (green) */
-    } 
-
+     color: #FF0000;
+}
+.link_footer {
+        color: #FFF;
+        text-decoration: none;
+}
+.link_footer:hover {
+    color: #FFF;
+}
 .div_footer{
  display: grid;
  grid-template-columns: 25% 25% 25% 25%;
