@@ -14,9 +14,6 @@ body {
     margin-left: 10px;
     text-align: left;
 }
-p{
-    text-size-adjust: 9px;
-}
 .ficha{
     background-color: #fff;
     width: 240px;
@@ -82,13 +79,15 @@ footer{
  grid-gap: 10px;
  grid-template-columns: 25% 25% 25% 25%;
  margin: 0 5% 0 5%;
+ padding: 20px 0px 20px 0px;
 }
 .div_destacadas{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 20px;
-    margin: 5% 5% 5% 5%;
+    margin: 0% 5% 0% 5%;
+    padding: 30px 10px;
 }
 .container{
      /* Arriba | Derecha | Abajo | Izquierda */
@@ -100,9 +99,19 @@ footer{
 }
 .bg_nav{
     background-color: rgb(210, 105, 30);
-    height: 30px;
+    height: 45px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-content: center;
+}
+.menu_nav{
+    display: block;
+    margin-top: 10px;
+}
+.formato_logo{
+    max-height: 50px;
+    max-width: 80px;
 }
 .jumbotron{
     min-height: 600px;
@@ -143,14 +152,8 @@ footer{
     background-color: azure;
     padding: 5px;
 }
-.galeria1, .galeria2, .galeria3, .galeria4, .galeria5, .galeria6, .galeria7  {
-    min-height: 120px;
-    min-width: 150px;
-    background-position: center;
-    background-size: cover;
-}
 .fondo{
-    min-height: 600px;
+    min-height: 350px;
     min-width: 600px;
     background-position: center;
     background-size: cover;
@@ -170,5 +173,10 @@ footer{
 @media only screen and (min-width: 900px) {
     .div_footer{
         grid-template-columns: auto auto auto auto;
-    }s
+    }
 }
+@media only screen and (min-width: 760px) {
+    .bg_nav{
+        flex-direction: row;
+    }
+ }
