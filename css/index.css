@@ -1,3 +1,7 @@
+:root{
+    --blanco: #ffffff;
+    --main-color: #D2691E;
+}
 /* CARD */
 body {
     /*background-color: rgb(211, 210, 210);
@@ -24,41 +28,6 @@ p{
     margin-left: 10px;
     position: relative;
 }
-.botton_azul{
-    background-color: #2e77d0;
-    color: #fff;
-    display: inline-block;
-    text-align: left;
-    border-radius: 4px;
-    padding: 4px 8px;
-    margin-top: 10px;
-    margin-left: 15px;
-
-}
-.borde_azul{
-    color: #2e77d0;
-    border: solid 1px #2e77d0;
-    border-radius: 4px;
-    display: inline-block;
-    margin: 0px 4px 10px 0px;
-    padding: 4px 8px;
-    margin-top: 10px;
-    margin-left: 15px;
-
-    }
-.boton_negro{
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    text-align: center;
-    padding: 15px 65px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    margin-top: 30px;
-    margin-left: 15px;
-
-
-}
 .img_lista{
     list-style-image: url('img/paloma.png');
     font-size: 15px;
@@ -81,7 +50,7 @@ p{
 .contenedor{
     display: flex;
     justify-content: space-around;
-    height: 250px;
+    height: 200px;
 }
 footer{
     bottom: 50px;
@@ -110,11 +79,62 @@ footer{
 }
 .div_footer{
  display: grid;
+ grid-gap: 10px;
  grid-template-columns: 25% 25% 25% 25%;
+ margin: 0 5% 0 5%;
+}
+.div_destacadas{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20px;
+    margin: 5% 5% 5% 5%;
+}
+.container{
+     /* Arriba | Derecha | Abajo | Izquierda */
+     margin: 0% 3% 0 3%;
 }
 .conf_carrucel{
     min-width: 300;
     min-height: 200;
+}
+.bg_nav{
+    background-color: rgb(210, 105, 30);
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.jumbotron{
+    min-height: 600px;
+    min-width: 600px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/fondo_inicio.jpg");
+}
+.busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton_naranja{
+    background-color: var(--main-color);
+    border: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 55px;
+    border-radius: 0px 20px 20px 0px;
+    margin-top: 300px;
+  /*  margin-left: 15px;
+  text-transform: uppercase;*/
+}
+.caja_naranja{
+    border: var(--blanco);
+    display: inline-block;
+    text-align: center;
+    padding: 15px 55px;
+    margin-top: 300px;
+    width: 600px;
 }
 .d-grid{
     display: grid;
@@ -138,21 +158,17 @@ footer{
 }
 
 @media only screen and (min-width: 400px) {
-   .d-grid{
+   .div_footer{
        grid-template-columns: auto;
    }
 }
 @media only screen and (min-width: 600px) {
-    .d-grid{
+    .div_footer{
         grid-template-columns: auto auto;
     }
 }
 @media only screen and (min-width: 900px) {
-    .d-grid{
-        grid-template-columns: auto auto auto auto auto;
-    }
-}
-.contenedor {
-    text-align: center;
-    align-content: center;
+    .div_footer{
+        grid-template-columns: auto auto auto auto;
+    }s
 }
