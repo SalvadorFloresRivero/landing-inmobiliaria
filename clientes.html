@@ -22,122 +22,99 @@
             <div class="menu_nav"><a class="link_footer"></a></div>
             <div class="menu_nav"><a class="link_footer">Iniciar sesión</a></div>
     </nav>
-    <section class="jumbotron">
-        <div class="busqueda">
-            <input class="caja_naranja" placeholder="Casa, departamento, terreno, ubicación." type="text">
-            <input type="button" class="boton_naranja" value="Buscar">
-        </div>
-    </section>
+
     <br><br>
     <div class="container">
-        <h3>Ofertas del mes</h3s>
-
-    <section class="conf_carrucel">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                    <div class="contenedor">
-                        <div class="div_footer">
-                        <img src="img/ventas/vivienda1.PNG" class="d-block w-15" alt="...">
-                        <img src="img/ventas/vivienda2.PNG" class="d-block w-15" alt="...">
-                        <img src="img/ventas/vivienda3.PNG" class="d-block w-15" alt="...">
-                        <img src="img/ventas/vivienda4.PNG" class="d-block w-15" alt="...">
-                    </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="contenedor">
-                    <div class="div_footer">
-                    <img src="img/ventas/vivienda5.PNG" class="d-block w-15" alt="...">
-                    <img src="img/ventas/vivienda6.PNG" class="d-block w-15" alt="...">
-                    <img src="img/ventas/vivienda7.PNG" class="d-block w-15" alt="...">
-                    <img src="img/ventas/vivienda8.PNG" class="d-block w-15" alt="...">
-                </div>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section><br><br><br>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Gestión de usuarios</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="row">
-
-                <div class='col-sm-5 col-md-5 col-lg-5'>Nombre</div>
-                <div class='col-sm-5 col-md-5 col-lg-5'>Teléfono</div>
-                <div class='col-sm-5 col-md-5 col-lg-5'>Entidad</div>
-                <div class='col-sm-5 col-md-5 col-lg-5'>Tipo vivienda</div>
-                <div class='col-sm-5 col-md-5 col-lg-5'>Editar</div>
-                <div class='col-sm-5 col-md-5 col-lg-5'>Eliminar</div>
 
 
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
+    <br><br><br>
+
+  <div class="row">
+    <div class='col-sm-2 col-md-2 col-lg-2'>Nombre</div>
+    <div class='col-sm-4 col-md-4 col-lg-4'>
+        <input type='text' name='names' id='names' class='form-control' placeholder='Ingresa el nombre comleto'/>
     </div>
+    <div class='col-sm-2 col-md-2 col-lg-2'>Teléfono</div>
+    <div class='col-sm-4 col-md-4 col-lg-4'>
+        <input type='number' name='phon' id='phon' class='form-control' placeholder='Ingresa número teléfonico' />
+    </div>
+</div>
+<div class="row">
+    <div class='col-sm-12 col-md-12 col-lg-12'>&nbsp;</div>
+</div>
+<div class="row">
+    <div class='col-sm-2 col-md-2 col-lg-2'>Entidad</div>
+    <div class='col-sm-4 col-md-4 col-lg-4'>
+        <select name='state' id='state' class='form-control'>
+            <option value='0'>Seleccione...</option>
+            <option value='1'>Aguascalientes</option>
+            <option value='2'>Baja California</option>
+            <option value='3'>Baja California Sur</option>
+            <option value='4'>Campeche</option>
+            <option value='5'>Coahuila</option>
+            <option value='6'>Colima</option>
+            <option value='7'>Chiapas</option>
+            <option value='8'>Chihuahua</option>
+            <option value='9'>Ciudad de México</option>
+            <option value='10'>Durango</option>
+            <option value='11'>Guanajuato</option>
+            <option value='12'>Guerrero</option>
+            <option value='13'>Hidalgo</option>
+            <option value='14'>Jalisco</option>
+            <option value='15'>Estado de México</option>
+            <option value='16'>Michoacán</option>
+            <option value='17'>Morelos</option>
+            <option value='18'>Nayarit</option>
+            <option value='19'>Nuevo León</option>
+            <option value='20'>Oaxaca</option>
+            <option value='21'>Puebla</option>
+            <option value='22'>Querétaro</option>
+            <option value='23'>Quintana Roo</option>
+            <option value='24'>San Luis Potosí</option>
+            <option value='25'>Sinaloa</option>
+            <option value='26'>Sonora</option>
+            <option value='27'>Tabasco</option>
+            <option value='28'>Tamaulipas</option>
+            <option value='29'>Tlaxcala</option>
+            <option value='30'>Veracruz</option>
+            <option value='31'>Yucatán</option>
+            <option value='32'>Zacatecas</option>
+            </select>
+    </div>
+    <div class='col-sm-2 col-md-2 col-lg-2'>Tipo vivienda</div>
+    <div class='col-sm-4 col-md-4 col-lg-4'>
+        <select name='houseType' id='houseType' class='form-control'>
+            <option value='0'>Seleccione...</option>
+            <option value='1'>Departamento</option>
+            <option value='2'>Casa</option>
+            <option value='3'>Terreno</option>
+            <option value='4'>Rentar</option>
+            </select>
+    </div>
+</div>
+
+<br><br><br>
+
+<table id="resultado" class="table table-striped table-hover">
+    <tr>
+      <th>No.</th>
+      <th>Nombre</th>
+      <th>Teléfono</th>
+      <th>Entidad</th>
+      <th>Tipo vivienda</th>
+      <th>Editar</th>
+      <th>Eliminar</th>
+    </tr>
+</table>
+
+<br><br><br>
+<div class="modal-footer">
+    <button type="button" class="btn_naranja" data-bs-dismiss="modal" onclick="myUser.newUser()">Agregar usuario</button>
   </div>
-  <!-- Fin Modal -->
-
-    <div>
-        <section>
-            <h4>Inmobiliarias destacadas en México</h4>
-            <br>
-            <div class="div_footer">
-                <div>
-                    <img src="img/inmobiliarias/Catano.png">
-                    <h4>Cataño</h4>
-                    <a class="link" href="#"><h6>Ver más</h6></a>
-                </div>
-                <div>
-                    <img src="img/inmobiliarias/Coldwell_Banker.png">
-                    <h4>Coldwell Banker</h4>
-                    <a class="link" href="#"><h6>Ver más</h6></a>
-                </div>
-                <div>
-                    <img src="img/inmobiliarias/Tecnocasa.png">
-                    <h4>Tecno Casa</h4>
-                    <a class="link" href="#"><h6>Ver más</h6></a>
-                </div>
-                <div>
-                    <img src="img/inmobiliarias/Kepler.png">
-                    <h4>Kepler</h4>
-                    <a class="link" href="#"><h6>Ver más</h6></a>
-                </div>
-
-            </div>
-
-        </section>
-        <br>
-        <br>
-        <br>
-    </div>
 
 </div>
 
-    <div class="fondo">
+    <!-- <div class="fondo">
         <div class="div_destacadas">
             <a class="link_footer" href="#"><h3>Casa fácil</h2></a>
         </div>
@@ -167,6 +144,8 @@
                 <a class="link_footer" href="#"><h6>Panama</h6></a>
                 <a class="link_footer" href="#"><h6>Honduras</6></a>
             </section>
+
+
             <section>
                 <h5 class="link_footer">Siguenos</h5>
                 <div class="siguenos"></div>
@@ -200,17 +179,48 @@
             </section>
         </div>
 
-        <!--footer>
+        <footer>
             <h6>© Copyright 2022 inmuebles24.com</h6>
             <h6>Términos y condiciones de Uso Términos y Condiciones de Contratación Política de privacidad</h6>
-        </footer-->
+        </footer>
 
-    </div>
+    </div> -->
 
-
+    <script src="js/main.js"></script>
 </body>
 <!-- JavaScript Bundle with Popper -->
-<script src="js/bootstrap.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <!-- JavaScript Bundle with Popper -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 </html>
+
+<!--
+ Modal 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gestión de usuarios</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+
+                <div class='col-sm-5 col-md-5 col-lg-5'>Nombre</div>
+                <div class='col-sm-5 col-md-5 col-lg-5'>Teléfono</div>
+                <div class='col-sm-5 col-md-5 col-lg-5'>Entidad</div>
+                <div class='col-sm-5 col-md-5 col-lg-5'>Tipo vivienda</div>
+                <div class='col-sm-5 col-md-5 col-lg-5'>Editar</div>
+                <div class='col-sm-5 col-md-5 col-lg-5'>Eliminar</div>
+
+
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  Fin Modal 
+-->

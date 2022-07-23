@@ -137,6 +137,17 @@ footer{
   /*  margin-left: 15px;
   text-transform: uppercase;*/
 }
+.btn_naranja{
+    background-color: var(--main-color);
+    border: var(--main-color);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 15px 15px 15px 15px;
+  /*  margin-left: 15px;
+  text-transform: uppercase;*/
+}
 .caja_naranja{
     border: var(--blanco);
     display: inline-block;
