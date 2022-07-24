@@ -114,6 +114,7 @@ class UserCRUD {
     }
     loadUser(id,name,phon,state,houseType) {
 
+        document.querySelector('#mod_id').value=id
         document.querySelector('#mod_names').value=name
         document.querySelector('#mod_phon').value=phon
         document.querySelector('#mod_state').value=state
@@ -190,20 +191,38 @@ class UserCRUD {
     }
     updateUser() {
 
-       /*  let idUpdate = document.querySelector('#id').value;
-        let names = document.querySelector('#names').value;
-        let phon = document.querySelector('#phon').value;
-        let state = document.querySelector('#state').value;
-        let houseType = document.querySelector('#houseType').value;
+        let idUpdate = document.querySelector('#mod_id').value;
+        let names = document.querySelector('#mod_names').value;
+        let phon = document.querySelector('#mod_phon').value;
+        let state = document.querySelector('#mod_state').value;
+        let houseType = document.querySelector('#mod_houseType').value;
 
-        myUsersUpdate = JSON.parse( localStorage.getItem('myUsers') )
+        console.log("idUpdate"+idUpdate)
 
-        let idcount=0;
+        let myUsersUpdate = JSON.parse( localStorage.getItem('myUsers') )
+        localStorage.removeItem("myUsers")
+        resultado.innerHTML=this.encabezado
+        const myUsersNuevosEd = []
+
+        let idcount=0
         myUsersUpdate.forEach(elemen=>{
-            if( myUsersUpdate[idcount].id == idUpdate)
-            console.log("Este es el objeto a modificar "+ myUsersUpdate[idcount].id);
-        }) */
-        console.log("Hola desde el update")
+            if( myUsersUpdate[idcount].id == idUpdate ){
+                let inserUser = new User(idUpdate,names,phon,state,houseType)
+                myUsersNuevosEd.push(inserUser)
+                this.showUser(inserUser)
+
+            }else{
+                myUsersNuevosEd.push(myUsersUpdate[idcount])
+                this.showUser(myUsersUpdate[idcount])
+            }
+            idcount+=1
+        })
+
+        localStorage.setItem('myUsers', JSON.stringify(myUsersNuevosEd))
+
+        //document.querySelector('#Cancelar').closest
+        //document.getElementById('exampleModal').submit()
+        //$("#exampleModal.close").click()
 
     }
 
