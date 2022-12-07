@@ -1,29 +1,13 @@
 :root{
     --blanco: #ffffff;
-    --main-color: #D2691E;
+    --main-color: #D4C19C;
+    --rojo: #FF0000
 }
-/* CARD */
+
 body {
-    /*background-color: rgb(211, 210, 210);
-    font-family: Arial, Helvetica, sans-serif;*/
+
     font-family: Helvetica,Arial,sans-serif;
-    /*font-size: 15px;*/
     text-align: center;
-}
-.alineacion_ficha {
-    margin-left: 10px;
-    text-align: left;
-}
-.ficha{
-    background-color: #fff;
-    width: 240px;
-    height: 650px;
-    border: solid 1px rgb(248, 242, 242);
-    border-radius: 15px;
-    padding: 10px 25px;
-    text-align: left;
-    margin-left: 10px;
-    position: relative;
 }
 .img_lista{
     list-style-image: url('img/paloma.png');
@@ -60,26 +44,40 @@ footer{
 /* FIN CARD */
 
 .link {
-    color: #FF0000;
+    color: var(--main-color);
     text-decoration: none;
 
 }
 .link:hover {
-     color: #FF0000;
+     color: var(--main-color);
 }
 .link_footer {
-        color: #FFF;
+        color: #000;
         text-decoration: none;
 }
 .link_footer:hover {
-    color: #FFF;
+    color: #000;
 }
 .div_footer{
  display: grid;
+/* height: 200px;
+ width: 200px; */
  grid-gap: 10px;
  grid-template-columns: 25% 25% 25% 25%;
  margin: 0 5% 0 5%;
  padding: 20px 0px 20px 0px;
+ 
+}
+
+.alinear{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.div_aliados{
+margin: 10px;
+padding: 5px;
 }
 .div_destacadas{
     display: grid;
@@ -98,8 +96,8 @@ footer{
     min-height: 200;
 }
 .bg_nav{
-    background-color: rgb(210, 105, 30);
-    height: 45px;
+    background-color: var(--main-color);
+    height: 55px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -107,11 +105,20 @@ footer{
 }
 .menu_nav{
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
+}
+.link_menu {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link_menu:hover {
+color: var(--rojo);
+font-weight: bold;
 }
 .formato_logo{
-    max-height: 50px;
-    max-width: 80px;
+    max-height: 55px;
+    max-width: 90px;
 }
 .jumbotron{
     min-height: 600px;
@@ -125,26 +132,16 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.boton_naranja{
+.boton_gold{
     background-color: var(--main-color);
     border: var(--main-color);
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     display: inline-block;
     text-align: center;
     padding: 15px 55px;
     border-radius: 0px 20px 20px 0px;
     margin-top: 300px;
-  /*  margin-left: 15px;
-  text-transform: uppercase;*/
-}
-.btn_naranja{
-    background-color: var(--main-color);
-    border: var(--main-color);
-    color: #fff;
-    display: inline-block;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 15px 15px 15px 15px;
   /*  margin-left: 15px;
   text-transform: uppercase;*/
 }
@@ -191,3 +188,31 @@ footer{
         flex-direction: row;
     }
  }
+
+ @media only screen and (min-width: 400px) {
+    .bg_nav{
+        grid-template-columns: auto;
+       
+    }
+ }
+ @media only screen and (min-width: 600px) {
+     .bg_nav{
+         grid-template-columns: auto auto;
+       
+
+     }
+ }
+ @media only screen and (min-width: 900px) {
+     .bg_nav{
+         grid-template-columns: auto auto auto auto;
+        
+
+     }
+ }
+ @media only screen and (min-width: 760px) {
+     .bg_nav{
+         flex-direction: row;
+      
+
+     }
+  }

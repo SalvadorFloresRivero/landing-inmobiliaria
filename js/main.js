@@ -220,14 +220,10 @@ class UserCRUD {
 
         localStorage.setItem('myUsers', JSON.stringify(myUsersNuevosEd))
 
-        //document.querySelector('#Cancelar').closest
-        //document.getElementById('exampleModal').submit()
-        //$("#exampleModal.close").click()
-
+        $('#exampleModal').modal('hide');
     }
 
 }
-
 
 const myTools = new Tools()
 const myUser = new UserCRUD()
